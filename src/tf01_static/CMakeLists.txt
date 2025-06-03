@@ -139,6 +139,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/tf01_static_node.cpp)
 add_executable(demo01_static_pub src/demo01_static_pub.cpp)
+add_executable(demo02_static_sub src/demo02_static_sub.cpp)
 
 
 ## Rename C++ executable without prefix
@@ -156,6 +157,9 @@ add_executable(demo01_static_pub src/demo01_static_pub.cpp)
 #   ${catkin_LIBRARIES}
 # )
 target_link_libraries(demo01_static_pub
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(demo02_static_sub
   ${catkin_LIBRARIES}
 )
 #############
