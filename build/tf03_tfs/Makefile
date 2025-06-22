@@ -167,6 +167,48 @@ depend:
 	cd /home/zzy/demo_04/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+tf03_tfs/CMakeFiles/demo01_tfs.dir/rule:
+	cd /home/zzy/demo_04/build && $(MAKE) -f CMakeFiles/Makefile2 tf03_tfs/CMakeFiles/demo01_tfs.dir/rule
+.PHONY : tf03_tfs/CMakeFiles/demo01_tfs.dir/rule
+
+# Convenience name for target.
+demo01_tfs: tf03_tfs/CMakeFiles/demo01_tfs.dir/rule
+
+.PHONY : demo01_tfs
+
+# fast build rule for target.
+demo01_tfs/fast:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf03_tfs/CMakeFiles/demo01_tfs.dir/build.make tf03_tfs/CMakeFiles/demo01_tfs.dir/build
+.PHONY : demo01_tfs/fast
+
+src/demo01_tfs.o: src/demo01_tfs.cpp.o
+
+.PHONY : src/demo01_tfs.o
+
+# target to build an object file
+src/demo01_tfs.cpp.o:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf03_tfs/CMakeFiles/demo01_tfs.dir/build.make tf03_tfs/CMakeFiles/demo01_tfs.dir/src/demo01_tfs.cpp.o
+.PHONY : src/demo01_tfs.cpp.o
+
+src/demo01_tfs.i: src/demo01_tfs.cpp.i
+
+.PHONY : src/demo01_tfs.i
+
+# target to preprocess a source file
+src/demo01_tfs.cpp.i:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf03_tfs/CMakeFiles/demo01_tfs.dir/build.make tf03_tfs/CMakeFiles/demo01_tfs.dir/src/demo01_tfs.cpp.i
+.PHONY : src/demo01_tfs.cpp.i
+
+src/demo01_tfs.s: src/demo01_tfs.cpp.s
+
+.PHONY : src/demo01_tfs.s
+
+# target to generate assembly for a file
+src/demo01_tfs.cpp.s:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf03_tfs/CMakeFiles/demo01_tfs.dir/build.make tf03_tfs/CMakeFiles/demo01_tfs.dir/src/demo01_tfs.cpp.s
+.PHONY : src/demo01_tfs.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -180,6 +222,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... demo01_tfs"
+	@echo "... src/demo01_tfs.o"
+	@echo "... src/demo01_tfs.i"
+	@echo "... src/demo01_tfs.s"
 .PHONY : help
 
 

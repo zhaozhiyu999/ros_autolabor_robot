@@ -105,3 +105,14 @@
 /home/zzy/demo_04/build/tf03_tfs/CMakeFiles/rebuild_cache.dir
 /home/zzy/demo_04/build/tf03_tfs/CMakeFiles/edit_cache.dir
 /home/zzy/demo_04/build/tf03_tfs/CMakeFiles/test.dir
+/home/zzy/demo_04/build/tf03_tfs/CMakeFiles/demo01_tfs.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/install/strip.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/install/local.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/edit_cache.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/test.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/install.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/list_install_components.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/rebuild_cache.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/test03_control_turtle2.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/test02_pub_turtle.dir
+/home/zzy/demo_04/build/tf04_test/CMakeFiles/test01_new_turtle.dir
