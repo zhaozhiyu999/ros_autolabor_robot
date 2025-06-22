@@ -288,6 +288,21 @@ geometry_msgs_generate_messages_nodejs/fast:
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+tf01_static/CMakeFiles/demo01_static_pub.dir/rule:
+	cd /home/zzy/demo_04/build && $(MAKE) -f CMakeFiles/Makefile2 tf01_static/CMakeFiles/demo01_static_pub.dir/rule
+.PHONY : tf01_static/CMakeFiles/demo01_static_pub.dir/rule
+
+# Convenience name for target.
+demo01_static_pub: tf01_static/CMakeFiles/demo01_static_pub.dir/rule
+
+.PHONY : demo01_static_pub
+
+# fast build rule for target.
+demo01_static_pub/fast:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/demo01_static_pub.dir/build.make tf01_static/CMakeFiles/demo01_static_pub.dir/build
+.PHONY : demo01_static_pub/fast
+
+# Convenience name for target.
 tf01_static/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
 	cd /home/zzy/demo_04/build && $(MAKE) -f CMakeFiles/Makefile2 tf01_static/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : tf01_static/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
@@ -361,6 +376,21 @@ roscpp_generate_messages_nodejs: tf01_static/CMakeFiles/roscpp_generate_messages
 roscpp_generate_messages_nodejs/fast:
 	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make tf01_static/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+tf01_static/CMakeFiles/demo02_static_sub.dir/rule:
+	cd /home/zzy/demo_04/build && $(MAKE) -f CMakeFiles/Makefile2 tf01_static/CMakeFiles/demo02_static_sub.dir/rule
+.PHONY : tf01_static/CMakeFiles/demo02_static_sub.dir/rule
+
+# Convenience name for target.
+demo02_static_sub: tf01_static/CMakeFiles/demo02_static_sub.dir/rule
+
+.PHONY : demo02_static_sub
+
+# fast build rule for target.
+demo02_static_sub/fast:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/demo02_static_sub.dir/build.make tf01_static/CMakeFiles/demo02_static_sub.dir/build
+.PHONY : demo02_static_sub/fast
 
 # Convenience name for target.
 tf01_static/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
@@ -692,6 +722,60 @@ actionlib_msgs_generate_messages_lisp/fast:
 	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make tf01_static/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
+src/demo01_static_pub.o: src/demo01_static_pub.cpp.o
+
+.PHONY : src/demo01_static_pub.o
+
+# target to build an object file
+src/demo01_static_pub.cpp.o:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/demo01_static_pub.dir/build.make tf01_static/CMakeFiles/demo01_static_pub.dir/src/demo01_static_pub.cpp.o
+.PHONY : src/demo01_static_pub.cpp.o
+
+src/demo01_static_pub.i: src/demo01_static_pub.cpp.i
+
+.PHONY : src/demo01_static_pub.i
+
+# target to preprocess a source file
+src/demo01_static_pub.cpp.i:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/demo01_static_pub.dir/build.make tf01_static/CMakeFiles/demo01_static_pub.dir/src/demo01_static_pub.cpp.i
+.PHONY : src/demo01_static_pub.cpp.i
+
+src/demo01_static_pub.s: src/demo01_static_pub.cpp.s
+
+.PHONY : src/demo01_static_pub.s
+
+# target to generate assembly for a file
+src/demo01_static_pub.cpp.s:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/demo01_static_pub.dir/build.make tf01_static/CMakeFiles/demo01_static_pub.dir/src/demo01_static_pub.cpp.s
+.PHONY : src/demo01_static_pub.cpp.s
+
+src/demo02_static_sub.o: src/demo02_static_sub.cpp.o
+
+.PHONY : src/demo02_static_sub.o
+
+# target to build an object file
+src/demo02_static_sub.cpp.o:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/demo02_static_sub.dir/build.make tf01_static/CMakeFiles/demo02_static_sub.dir/src/demo02_static_sub.cpp.o
+.PHONY : src/demo02_static_sub.cpp.o
+
+src/demo02_static_sub.i: src/demo02_static_sub.cpp.i
+
+.PHONY : src/demo02_static_sub.i
+
+# target to preprocess a source file
+src/demo02_static_sub.cpp.i:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/demo02_static_sub.dir/build.make tf01_static/CMakeFiles/demo02_static_sub.dir/src/demo02_static_sub.cpp.i
+.PHONY : src/demo02_static_sub.cpp.i
+
+src/demo02_static_sub.s: src/demo02_static_sub.cpp.s
+
+.PHONY : src/demo02_static_sub.s
+
+# target to generate assembly for a file
+src/demo02_static_sub.cpp.s:
+	cd /home/zzy/demo_04/build && $(MAKE) -f tf01_static/CMakeFiles/demo02_static_sub.dir/build.make tf01_static/CMakeFiles/demo02_static_sub.dir/src/demo02_static_sub.cpp.s
+.PHONY : src/demo02_static_sub.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -710,12 +794,14 @@ help:
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... demo01_static_pub"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... test"
+	@echo "... demo02_static_sub"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
@@ -740,6 +826,12 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... src/demo01_static_pub.o"
+	@echo "... src/demo01_static_pub.i"
+	@echo "... src/demo01_static_pub.s"
+	@echo "... src/demo02_static_sub.o"
+	@echo "... src/demo02_static_sub.i"
+	@echo "... src/demo02_static_sub.s"
 .PHONY : help
 
 
