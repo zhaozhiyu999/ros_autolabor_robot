@@ -1,0 +1,13 @@
+<launch>
+
+    <!-- 载入urdf文件到·参数服务器 -->
+    <param name="robot_description" textfile="$(find urdf01_rviz)/urdf/urdf/demo03_joint.urdf" />
+
+    <!-- 启动 rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find urdf01_rviz)/config/show_mycar.rviz" />
+    <!-- 还需要设置baselink与camera的坐标关系，因为rviz需要才能正确运行，但不必自己写，可以调用节点joint state pub and robot_state pub -->
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+    <!-- 添加控制joint的运动节点的gui界面（也是调用的） ，camera作为child系，是joint施加运动的对象-->
+    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" />
+</launch>
