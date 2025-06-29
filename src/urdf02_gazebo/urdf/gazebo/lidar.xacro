@@ -1,0 +1,36 @@
+<robot name="my_sensors" xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <!-- 雷达 -->
+  <gazebo reference="laser">
+    <sensor type="ray" name="rplidar">
+      <pose>0 0 0 0 0 0</pose><!-- xyz+rpy -->
+      <visualize>true</visualize>
+      <update_rate>5.5</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples><!-- lidar旋转一周（指自己能力范围的一周）发布360个射线 -->
+            <resolution>1</resolution><!-- 设置几就是几个射线里对应有几个测距 -->
+            <min_angle>-3</min_angle><!-- +-3.14才是整一圈 -->
+            <max_angle>3</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution><!-- 精确度 -->
+        </range>
+        <noise>
+          <type>gaussian</type><!-- 真实情况的模拟要有噪声，所以用高斯噪声模拟，再结合卡尔曼滤波更精确预测 -->
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_rplidar" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName><!-- 用这个/scan话题发布雷达的视觉消息 -->
+        <frameName>laser</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>

@@ -1,4 +1,11 @@
 <launch>
+    <!-- 添加点云坐标系到kinecxt连杆坐标系的变换 -->
+    <!-- 问题:在rviz中显示时错位。
+
+        原因:在kinect中图像数据与点云数据使用了两套坐标系统，且两套坐标系统位姿并不一致。
+        所以用下面这行转换一下，默认会x和z轴便转90度（1.57）所以还要减回去 -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher" args="0 0 0 -1.57 0 -1.57 /support /support_depth" />
+
     <!-- 启动 rviz ,可以查看來自於gazebo中的里程計-->
     <node pkg="rviz" type="rviz" name="rviz" />
 

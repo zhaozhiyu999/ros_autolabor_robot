@@ -11,4 +11,11 @@
     <xacro:include filename="gazebo/move.xacro" />
     <!-- rosrun teleop_twist_keyboard  teleop_twist_keyboard.py 去控制gazebo機器人運動
  -->
+    <!-- 雷达的控制文件 -->
+    <xacro:include filename="gazebo/lidar.xacro" />
+    <!-- 摄像头控制文件 -->
+    <xacro:include filename="gazebo/camera.xacro" />
+    <!-- 深度相机控制文件kinect -->
+    <xacro:include filename="gazebo/kinect.xacro" />
+    
 </robot>
