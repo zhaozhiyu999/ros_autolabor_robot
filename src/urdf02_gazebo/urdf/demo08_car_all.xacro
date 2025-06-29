@@ -1,4 +1,4 @@
-<robot name="my_car" xmlns:xacro="http://wiki.ros.org/xacro">
+<robot name="my_car_gazebo" xmlns:xacro="http://wiki.ros.org/xacro">
     <!-- 包含惯性矩阵文件 -->
     <xacro:include filename="head.xacro" />
 
@@ -6,4 +6,9 @@
     <xacro:include filename="demo05_car_base.xacro" />
     <xacro:include filename="demo06_car_camera.xacro" />
     <xacro:include filename="demo07_car_lidar.xacro" />
+
+    <!-- 运动控制 -->
+    <xacro:include filename="gazebo/move.xacro" />
+    <!-- rosrun teleop_twist_keyboard  teleop_twist_keyboard.py 去控制gazebo機器人運動
+ -->
 </robot>
