@@ -38,7 +38,7 @@
       <param name="lasamplerange" value="0.005"/>
       <param name="lasamplestep" value="0.005"/>
     </node>
-    <!-- 雷达坐标系->基座标系 -->
+    <!-- 雷达坐标系到基座标系 -->
     <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher" />
     <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher" />
 
