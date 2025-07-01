@@ -1,0 +1,8 @@
+#1.目标值(请求)
+int32 num
+---
+#最终结果（响应）
+int32 result
+---
+#连续反馈
+float64 progress_bar

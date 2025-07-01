@@ -147,11 +147,15 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/zzy/demo_04/build/gtest/cmake_install.cmake")
   include("/home/zzy/demo_04/build/rqt_demo/cmake_install.cmake")
+  include("/home/zzy/demo_04/build/demo01_action/cmake_install.cmake")
   include("/home/zzy/demo_04/build/rosbag_demo/cmake_install.cmake")
   include("/home/zzy/demo_04/build/tf01_static/cmake_install.cmake")
   include("/home/zzy/demo_04/build/tf02_dynamic/cmake_install.cmake")
   include("/home/zzy/demo_04/build/tf03_tfs/cmake_install.cmake")
   include("/home/zzy/demo_04/build/tf04_test/cmake_install.cmake")
+  include("/home/zzy/demo_04/build/nav_demo/cmake_install.cmake")
+  include("/home/zzy/demo_04/build/urdf01_rviz/cmake_install.cmake")
+  include("/home/zzy/demo_04/build/urdf02_gazebo/cmake_install.cmake")
 
 endif()
 
