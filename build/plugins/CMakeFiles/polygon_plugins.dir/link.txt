@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O2 -g -DNDEBUG  -shared -Wl,-soname,libpolygon_plugins.so -o /home/zzy/demo_04/devel/lib/libpolygon_plugins.so CMakeFiles/polygon_plugins.dir/src/polygon_plugins.cpp.o 

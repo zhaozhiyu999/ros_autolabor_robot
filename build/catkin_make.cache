@@ -1,2 +1,2 @@
-demo01_action:dynamic_reconfiguration:nav_demo:rosbag_demo:rqt_demo:tf01_static:tf02_dynamic:tf03_tfs:tf04_test:urdf01_rviz:urdf02_gazebo
+demo01_action:dynamic_reconfiguration:nav_demo:plugins:rosbag_demo:rqt_demo:tf01_static:tf02_dynamic:tf03_tfs:tf04_test:urdf01_rviz:urdf02_gazebo
 -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/zzy/demo_04/devel -DCMAKE_INSTALL_PREFIX=/home/zzy/demo_04/install -G Unix Makefiles

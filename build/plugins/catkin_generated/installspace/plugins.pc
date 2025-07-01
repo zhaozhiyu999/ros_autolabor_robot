@@ -1,0 +1,8 @@
+prefix=/home/zzy/demo_04/install
+
+Name: plugins
+Description: Description of plugins
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

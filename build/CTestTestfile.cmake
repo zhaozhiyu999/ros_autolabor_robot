@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("plugins")
 subdirs("rqt_demo")
 subdirs("demo01_action")
 subdirs("dynamic_reconfiguration")

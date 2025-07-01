@@ -9,6 +9,7 @@
         "/opt/ros/noetic/include/**",
         "/home/zzy/ros_ws/src/helloworld/include/",
         "/home/zzy/demo_04/devel/include/**",
+        "/home/zzy/demo_04/src/plugins/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",

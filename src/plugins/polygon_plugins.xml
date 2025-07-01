@@ -1,0 +1,15 @@
+<!-- 需要定位动态链接库
+        library根标签下的path属性设置
+    声明子类和父类
+        library的子标签class声明 -->
+<!-- 插件库的相对路径 -->
+<library path="lib/libpolygon_plugins">
+    <!-- type="插件类" base_class_type="基类" -->
+    <class type="polygon_plugins::Triangle" base_class_type="polygon_base::RegularPolygon">
+      <!-- 描述信息 -->
+      <description>This is a triangle plugin.</description>
+    </class>
+    <class type="polygon_plugins::Square" base_class_type="polygon_base::RegularPolygon">
+      <description>This is a square plugin.</description>
+    </class>
+  </library>
