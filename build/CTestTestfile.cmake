@@ -7,6 +7,7 @@
 subdirs("gtest")
 subdirs("rqt_demo")
 subdirs("demo01_action")
+subdirs("dynamic_reconfiguration")
 subdirs("rosbag_demo")
 subdirs("tf01_static")
 subdirs("tf02_dynamic")
